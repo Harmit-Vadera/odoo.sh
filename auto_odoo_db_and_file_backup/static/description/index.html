@@ -1,0 +1,799 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<section class="oe_container " style="margin:0; padding:0; font-family:'Rajdhani', sans-serif">
+	<div class="oe_row oe_spaced container-fluid" style="width:100%; margin:0 auto">
+		<div class="oe_span12" style="width: 100%; padding: 0; float: unset;">
+			<div style="text-align:center" class="d-block d-lg-none">
+				<h2 class="oe_slogan" style="color:#875a7b; font-family: 'Montserrat', sans-serif; font-size:36px; text-align:center; margin:20px 0 0 0; font-weight:700">AUTOMATIC BACKUP</h2>
+			</div>
+			<div style="text-align:center" class="d-none d-lg-block">
+				<span style="padding:0; margin:0; font-size:40px; letter-spacing:5px; color:rgba(99, 99, 99, 0.1); font-weight:700; font-family: 'Montserrat', sans-serif; ">AUTOMATIC BACKUP</span>
+				<h2 class="oe_slogan" style="color:#875a7b; font-family: 'Montserrat', sans-serif; font-size:36px; text-align:center; margin:-44px 0 0 0; font-weight:700">AUTOMATIC BACKUP</h2>
+			</div>
+
+			<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; text-align: center; margin: 15px 0;">Local Server, Google Drive, Dropbox, SFTP and FTP</p>
+			<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 0px 20px;">
+			<b>Automatic Odoo Backup Module:</b>
+			<ul>
+			
+			<li>Backup Local Server, Google Drive, Dropbox, SFTP and FTP</li>
+			<li>User backup database or Database and Files both</li>
+			<li>User Get mail Notification when success or failed backup</li>
+			<li>Create zip filestore and store specified location</li>
+			</ul>
+			</p>
+
+		</div>
+
+		<div class="oe_span12" style="width: 100%; padding: 0; float: unset;">
+			<div style="width: 100%; margin: 0 auto; text-align: center;">
+				<img class="oe_screenshot" src="main.gif" style="width: 100%;">
+			</div>
+		</div>
+
+		<div style="border:0; margin:40px 0; height:4px; border-top:1px solid #875a7b; border-bottom:1px solid #875a7b; text-align:center">
+			<i class="fa fa-eercast fa-spin" style="color:#875a7b; border-radius:100%; background-color:#fff; text-align:center; display:inline-block; height:50px; line-height:50px!important; width:50px; font-size:30px; margin:-20px auto 0 -25px">
+			</i>
+		</div>
+
+
+		<!-- tab start -->
+		<div class="oe_styling_v8 row">
+			<div class="col-12">
+				<div id="wapper_tabs" style="padding: 30px 20px; margin: 50px 0; background-color: #F0F4F7; border-radius: 10px;">
+					<ul role="tablist" class="nav nav-tabs justify-content-center" data-tabs="tabs" style="border:none; background-color:unset;">
+						<li class="nav-item mb-3 mb-sm-0" style="margin-right: 4px; border-top-right-radius: 20px; border-top-left-radius: 20px; ">
+							<a href="#features" data-toggle="tab" aria-expanded="false" class="nav-link active show" style="font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif; border-top-right-radius: 10px; border-top-left-radius: 10px;">Features
+							</a>
+						</li>
+						<li class="nav-item mb-3 mb-sm-0" style="margin-right: 4px; border-top-right-radius: 20px; border-top-left-radius: 20px; ">
+							<a href="#page_screenshots" data-toggle="tab" aria-expanded="false" class="nav-link" style="font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif; border-top-right-radius: 10px; border-top-left-radius: 10px;">Automatic Backup Step
+							</a>
+						</li>
+						<li class="nav-item mb-3 mb-sm-0" style="margin-right: 4px; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+							<a href="#userguid" class="nav-link" data-toggle="tab" aria-expanded="false" style="font-weight: 600;color: #875a7b; font-family: 'Montserrat', sans-serif; border-top-right-radius: 10px; border-top-left-radius: 10px;">User Guide
+							</a>
+						</li>
+						<li class="nav-item mb-3 mb-sm-0" style="margin-right: 4px; border-top-right-radius: 20px; border-top-left-radius: 20px;">
+							<a href="#faqs" class="nav-link" data-toggle="tab" aria-expanded="false" style="font-weight: 600;color:#875a7b; font-family: 'Montserrat', sans-serif; border-top-right-radius: 10px; border-top-left-radius: 10px;">FAQ
+							</a>
+						</li>
+					</ul>
+					<div id="tabs_content" class="tab-content" style="background-color: #fff; border-radius: 10px; padding: 2%; margin: 0 1%; padding-top:4%  ">
+						<div class="tab-pane show active" id="features">
+							<img src="automatic-backup.jpg" class="oe_screenshot img-fluid">
+						</div>
+						<div class="tab-pane" id="page_screenshots">
+							<div class="d-none d-md-block">
+								<div class="row">
+									<div class="col-12 col-md-5 col-lg-4 col-xl-3">
+										<ul class="nav flex-column o_tab_nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+											<li class="nav-item">
+												<a class="nav-link active" id="configure-auto-db-tab" data-toggle="pill" href="#configure-auto-db" role="tab" aria-controls="configure-auto-db" aria-selected="true" style="padding: .5rem 0rem; font-weight: 600; font-family: 'Montserrat', sans-serif; color: #875a7b;">
+													<i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>Configure Auto DB Backups
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="folder-local-db-tab" data-toggle="pill" href="#folder-local-db" role="tab" aria-controls="folder-local-db" aria-selected="false" style="padding: .5rem 0rem; font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif;"><i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>Local Folder DB Backup
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="google-drive-db-tab" data-toggle="pill" href="#google-drive-db" role="tab" aria-controls="google-drive-db" aria-selected="false" style="padding: .5rem 0rem; font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif;"><i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>Google Drive DB Backup
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="dropbox-db-tab" data-toggle="pill" href="#dropbox-db" role="tab" aria-controls="dropbox-db" aria-selected="false" style="padding: .5rem 0rem; font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif;"><i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>Dropbox DB Backup
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="FTP-db-tab" data-toggle="pill" href="#FTP-db" role="tab" aria-controls="FTP-db" aria-selected="false" style="padding: .5rem 0rem; font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif;"><i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>FTP DB Backup
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="SFTP-db-tab" data-toggle="pill" href="#SFTP-db" role="tab" aria-controls="SFTP-db" aria-selected="false" style="padding: .5rem 0rem; font-weight: 600; color: #875a7b; font-family: 'Montserrat', sans-serif;"><i class="fa fa-crosshairs fa-spin" style="color:#875a7b; font-size:24px; margin:5px 10px"></i>SFTP DB Backup
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-7 col-lg-8 col-xl-9">
+										<div class="tab-content" id="v-pills-tabContent">
+											<div class="tab-pane fade show active text-center" id="configure-auto-db" role="tabpanel" aria-labelledby="configure-auto-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">1. To set configuration for Auto Database Backups, Goto Settings > Technical > Auto DB Backups > Configure Auto DB Backups here you will get one record click on that, you will find here configuration form to set Auto </p>
+												<img src="Goto Settings-Technical.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">Module allow upload backups to Folder, Google Drive, Dropbox, FTP and SFTP</p>
+												<img src="Auto-db-backups-file-name.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">You can use all or any one you wish to set for databse backups destination,where you want to put DB backups from given five backup destination, backup to Folder or Google Drive or Dropbox or FTP or SFTP as per you choice by making active field True</p>
+											</div>
+
+											<div class="tab-pane fade text-center" id="folder-local-db" role="tabpanel" aria-labelledby="folder-local-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">2. To set database backup to Folder(Local), click on edit than click on automatic backup rule where backup destination is Folder. You will have form to configure DB backup to Folder as below:</p>
+												<img src="backup-Local.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Fields To set:</b>
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Backup Type :</b> Select which backup type you want to take for database it's as a zip (with file store) or .dump (only database).
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Backup Destination :</b> Folder
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Backup :</b> Select backup for what you want to take as a backup it's Databse Onle or Databse and Files(database with modules folder ).
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Files Path :</b> If you are taking backup with database and files than mention path of modules which you want to take backup for, along with database.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Backup Directory :</b> Set path for, where you want to put backup in your system.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Active :</b> If you want to set your database backup destination to Folder than make active field checked. If you don't want to take DB backup to Folder then make it Inactive by making active field unchecked.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Interval Number :</b> Set number of days/months/weeks/hours/minutes for which you want to take your database backup.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Interval Unit : </b> Set unit for which you want to take your database backup every days/months/weeks/hours/minutes.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Next Excecution date : </b> If you want to set manually the date when to take DB backup to take next than you can set it here.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Button > Backup : </b> You can take backup directly using this Backup button if you want to.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After configure all fields click on save and again save main form.
+												</p>
+											</div>
+
+											<div class="tab-pane fade text-center" id="google-drive-db" role="tabpanel" aria-labelledby="google-drive-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													3. To set database backup to Google Drive, click on edit than click on automatic backup rule where backup destination is Google Drive. You will have form to configure DB backup to Google Drive as below:
+												</p>
+												<img src="Google-Drive-db.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Fields To set : </b>
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Authorization Code : </b> To get authorization code click on link Get Authorization Code as shown in above figure, after that you will redirect to another page as shown in below image:
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													Here you have to use Google account in which drive you want to take backup. 
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After Proceeding all steps you will get Authorization code, copy that and paste it to this field.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													All other fields are same as described in point 2.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After configure all fields click on save and again save main form.
+												</p>
+											</div>
+
+											<div class="tab-pane fade text-center" id="dropbox-db" role="tabpanel" aria-labelledby="dropbox-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													4. To set database backup to Dropbox, click on edit than click on automatic backup rule where backup destination is Dropbox. You will have form to configure DB backup to Dropbox as below:
+												</p>
+												<img src="Dropbox-db-backup.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Fields To set:</b>
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													First to set App key and App secret you need to create one app in your Dropbox so to do that,
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Step 1: </b> Go to Dropbox developer portl > https://www.dropbox.com/developers/apps.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													You have page as shown in below image:
+												</p>
+												<img src="Dropbox-1.png" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													Click on create app button on right top. You will have new page to create an app in dropbox as below:
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Step 2 :</b> Click on Choose an Api.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Step 3 :</b> Than you get options for Choose the type of access you need > select Full Dropbox.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Step 4 :</b> Give Name for the app. Click on create app.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													Now your App is created. And you will redirect to your created app page from there you can get App key and App secret as show in below image:
+												</p>
+												<img src="Dropbox-2.png" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													Set those values in field App Key and App Secret.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Authorization Code: </b> To set this click on link Get Authorization code, you will redirect to a new page if you are not logged in to dropbox than sign in from there otherwise continue to get code. After all preocess done you will have Authorization code and use that code in you form.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													All other fields are same as described in point 2.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After configure all fields click on save and again save main form.
+												</p>
+											</div>
+
+											<div class="tab-pane fade text-center" id="FTP-db" role="tabpanel" aria-labelledby="FTP-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													5. To set database backup to FTP, click on edit than click on automatic backup rule where backup destination is FTP. You will have form to configure DB backup to FTP as below:
+												</p>
+												<img src="FTP-db-backup.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Fields To Set: </b>
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>FTP Address: </b> Set the IP address from your remote server.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>FTP Port: </b> Set port on the FTP server.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>FTP Username: </b> Set the username where the FTP connection should be made with.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>FTP Password: </b> Set the password from the user where the FTP connection should be made with.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>FTP Path: </b> Set the path where you want to store DB backup in FTP.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After that once check for connection. To do that click on Test FTP Connection.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													All other fields are same as described in point 2.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After configure all fields click on save and again save main form.
+												</p>
+											</div>
+
+											<div class="tab-pane fade text-center" id="SFTP-db" role="tabpanel" aria-labelledby="SFTP-db-tab">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													6. To set database backup to SFTP, click on edit than click on automatic backup rule where backup destination is SFTP. You will have form to configure DB backup to SFTP as below:
+												</p>
+												<img src="SFTP-db-backup.PNG" class="oe_screenshot img-fluid">
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>Fields To Set: </b>
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>SFTP Host: </b>  Set the IP address from your remote server.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>SFTP User: </b>  Set the username where the SFTP connection should be made with.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>SFTP Key file path: </b> Give the path where key file is present. And use .pem key file.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													<b>SFTP Path: </b> Give the the path in remote server where you want to store DB backup.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After that once check for connection. To do that click on Test SFTP Connection.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													All other fields are same as described in point 2.
+												</p>
+												<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0;">
+													After configure all fields click on save and again save main form.
+												</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-block d-md-none">
+								<div class="page-screenshots faq s_faq" style="background-color:#ffffff !important; border-radius: 10px;">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab1" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																Configure Auto DB Backups
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab1" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">1. To set configuration for Auto Database Backups, Goto Settings > Technical > Auto DB Backups > Configure Auto DB Backups here you will get one record click on that, you will find here configuration form to set Auto </p>
+														<img src="Goto Settings-Technical.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">DB backups for upload backups to Folder, Google Drive, Dropbox, FTP,</p>
+														<img src="Auto-db-backups-file-name.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">You can use all or any one you wish to set for databse backups destination,where you want to put DB backups from given five backup destination, backup to Folder or Google Drive or Dropbox or FTP or SFTP as per you choice by making active field True</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab2" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																Local Folder DB Backup
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab2" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">2. To set database backup to Folder(Local), click on edit than click on automatic backups rule where backup destination is Folder. You will have form to confugure DB backup to Folder as below:</p>
+														<img src="backup-Local.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Fields To set:</b>
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Backup Type :</b> Select which backup type you want to take for database it's as a zip (with filestore) or .dump (only database).
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Backup Destination :</b> Folder
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Backup :</b> Select backup for what you want to take as a backup it's Databse Onle or Databse and Files(database with modules folder ).
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Files Path :</b> If you are taking backup with database and files than mention path of modules which you want to take backup for, along with database.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Backup Directory :</b> Set path for, where you want to put backups in your system.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Active :</b> If you want to set your databse backup destination to Folder than make active field checked. If you don't want  to take DB backup to Folder than make it Iactive by making active field unchecked.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Interval Number :</b> Set number of days/months/weeks/hours/minutes for which you want to take your database backup.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Interval Unit : </b> Set unit for which you want to take your database backup every days/months/weeks/hours/minutes.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Next Excecution date : </b> If you want to set mannualy the date when to take DB backup to take next than you can set it here.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Button > Backup : </b> You can take backup directly using this Backup button if you want to.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After configure all fields click on save and again save main form.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab3" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																Google Drive DB Backup
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab3" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															3. To set database backup to Google Drive, click on edit than click on automatic backups rule where backup destination is Google Drive. You will have form to confugure DB backup to Google Drive as below:
+														</p>
+														<img src="Google-Drive-db.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Fields To set : </b>
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Authorization Code : </b> To get authorization code click on link Get Authorization Code as shown in above figure, after that you will redirect to another page as shown in below image:
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															Here you have to use Google account in which drive you want to take backup. 
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After Proceeding all steps you will get Authorization code, copy that and paste it to this field.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															All other fields are same as described in point 2.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After configure all fields click on save and again save main form.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab4" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																Dropbox DB Backup
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab4" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															4. To set database backup to Dropbox, click on edit than click on automatic backups rule where backup destination is Dropbox. You will have form to confugure DB backup to Dropbox as below:
+														</p>
+														<img src="Dropbox-db-backup.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Fields To set:</b>
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															First to set App key and App secret you need to create one app in your Dropbox so to do that,
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Step 1: </b> Go to Dropbox developer portl > https://www.dropbox.com/developers/apps.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															You have page as shown in below image:
+														</p>
+														<img src="Dropbox-1.png" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															Click on create app button on right top. You will have new page to create an app in dropbox as below:
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Step 2 :</b> Click on Choose an Api.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Step 3 :</b> Than you get options for Choose the type of access you need > select Full Dropbox.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Step 4 :</b> Give Name for the app. Click on create app.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															Now your App is created. And you will redirect to your created app page from there you can get App key and App secret as show in below image:
+														</p>
+														<img src="Dropbox-2.png" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															Set those values in field App Key and App Secret.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Authorization Code: </b> To set this click on link Get Authorization code, you will redirect to a new page if you are not logged in to dropbox than sign in from there otherwise continue to get code. After all preocess done you will have Authorization code and use that code in you form.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															All other fields are same as described in point 2.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After configure all fields click on save and again save main form.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab5" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																FTP DB Backup
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab5" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															5. To set database backup to FTP, click on edit than click on automatic backups rule where backup destination is FTP. You will have form to confugure DB backup to FTP as below:
+														</p>
+														<img src="FTP-db-backup.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Fields To Set: </b>
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>FTP Address: </b> Set the IP address from your remote server.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>FTP Port: </b> Set port on the FTP server.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>FTP Username: </b> Set the username where the FTP connection should be made with.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>FTP Password: </b> Set the password from the user where the FTP connection should be made with.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>FTP Path: </b> Set the path where you want to store DB backup in FTP.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After that once check for connection. To do that click on Test FTP Connection.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															All other fields are same as described in point 2.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After configure all fields click on save and again save main form.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default" style="box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17); padding:15px 15px; border: 1px solid rgba(0, 0, 0, 0.06) border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#tab6" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">
+																SFTP DB Backup
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="tab6" class="panel-collapse collapse mt-4 text-center">
+													<div>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															6. To set database backup to SFTP, click on edit than click on automatic backups rule where backup destination is SFTP. You will have form to confugure DB backup to SFTP as below:
+														</p>
+														<img src="SFTP-db-backup.PNG" class="oe_screenshot img-fluid">
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>Fields To Set: </b>
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>SFTP Host: </b>  Set the IP address from your remote server.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>SFTP User: </b>  Set the username where the SFTP connection should be made with.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>SFTP Key file path: </b> Give the path where key file is present. And use .pem key file.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															<b>SFTP Path: </b> Give the the path in remote server where you want to store DB backup.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After that once check for connection. To do that click on Test SFTP Connection.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															All other fields are same as described in point 2.
+														</p>
+														<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 400; text-align: justify; margin: 15px 0; word-break: break-all;">
+															After configure all fields click on save and again save main form.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="userguid">
+							<hr style="border-top:1px solid #ddd; margin:5px 0px; padding:0">
+							<div style="padding:10px 15px">
+								<p class="mb0 align-items-center" style="display: flex; align-items: center;">
+									<img src="book-Icon.png" style="width:40px; margin-right:15px "><span style="display:block; color: #875a7b; font-family: 'Montserrat', sans-serif;">You can find the complete user manual of Module plus inside <span style="font-weight:bold">Automatic_Backup/documentation</span> folder.</span></p>
+								</div>
+							</div>
+							<div class="tab-pane" id="faqs">
+								<div class="faq s_faq" style="background-color:#ffffff !important; border-radius: 10px;">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default deep-2 deep_hover" style="padding:15px 15px; border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#faq1" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">Is this Module 'One-Click Installable'?
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="faq1" class="panel-collapse collapse mt-4">
+													<div>
+														<p class="mb32" style="height:auto; padding-left:3%; margin-left:2%; font-family:'Montserrat', sans-serif; color: #875a7b; font-size: 18px; ">
+															Yes, Its easily install &amp; active.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default deep-2 deep_hover" style="padding:15px 15px; border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#faq2" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">Can I resell this Module?
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="faq2" class="panel-collapse collapse mt-4">
+													<div>
+														<p class="mb32" style="height:auto; padding-left:3%; margin-left:2%; font-size: 18px; color: #875a7b; font-family:'Montserrat', sans-serif; ">
+															No, Auto-backup is for your commercial use only. You do not have the rights to resell this Module. Icon Technology owns the full Copyright of all the resources associated with the module.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default deep-2 deep_hover" style="padding:15px 15px; border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#faq3" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%;">Will I get Future Upgrades regarding this Module for free of Cost ?
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="faq3" class="panel-collapse collapse mt-4">
+													<div>
+														<p class="mb32" style="height:auto; padding-left:3%; margin-left:2%; font-family:'Montserrat', sans-serif; color: #875a7b; font-size: 18px;">
+															Yes
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" style="border:1px solid #fff; border-radius:10px; margin-bottom:20px">
+											<div class="panel panel-default deep-2 deep_hover" style="padding:15px 15px; border-radius:10px">
+												<div class="panel-heading mt0" style="border:1px solid transparent !important">
+													<h4 class="panel-title" style="margin:0">
+														<a class="collapsed" style="color:#875a7b; font-size:20px; font-weight:700; font-family:'Montserrat', sans-serif;" data-toggle="collapse" href="#faq4" aria-expanded="false">
+															<span class="panelcontent" style="padding:0% 2%">If need some customization in this module. How can I request it?
+															</span>
+														</a>
+													</h4>
+												</div>
+												<div id="faq4" class="panel-collapse collapse mt-4">
+													<div>
+														<p class="mb32" style="height:auto; padding-left:3%; margin-left:2%; font-family:'Montserrat', sans-serif; color: #875a7b; font-size: 18px;">
+															Please Contact Us on 
+															<a href="mailto:team@icontechnology.in" style="color: #875a7b; font-weight: 600;">team@icontechnology.in</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- tab end -->
+
+			<div style="border:0; margin:40px 0; height:4px; border-top:1px solid #875a7b; border-bottom:1px solid #875a7b; text-align:center">
+				<i class="fa fa-eercast fa-spin" style="color:#875a7b; border-radius:100%; background-color:#fff; text-align:center; display:inline-block; height:50px; line-height:50px!important; width:50px; font-size:30px; margin:-20px auto 0 -25px">
+				</i>
+			</div>
+
+			<!-- Help & Support start -->
+			<div style="text-align: center;" class="d-block d-lg-none">
+				<h2 class="oe_slogan" style="padding: 0 0 3px 0; font-family: 'Montserrat', sans-serif; margin: 20px 0 0 0; color: #875a7b; position: relative; font-size: 36px; font-weight: 700;">Help & Support
+				</h2>
+			</div>
+
+			<div style="text-align: center;" class="d-none d-lg-block">
+				<span style="padding: 0; margin: 0; font-size: 58px; letter-spacing: 5px; color: #636363; font-weight: 700; color: rgba(99, 99, 99, 0.1); font-family: 'Montserrat', sans-serif;">Help & Support</span>
+				<h2 class="oe_slogan" style="padding: 0 0 3px 0; font-family: 'Montserrat', sans-serif; margin: -67px 0 0 0; color: #875a7b; position: relative; font-size: 36px; font-weight: 700;">Help & Support</h2>
+			</div>
+
+			<div class="title">
+				<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; text-align: center; margin: 15px 0;">Get free support for installation of this module or need any support related to this module. Also if need any other customization then contact us.
+				</p>
+			</div>
+
+			<div class="help" style="text-align: center; width: 100%;">
+				<ul class="p-0" style="text-align:center;">
+					<li style="display:inline-block; *display:inline; /*IE7*/  *zoom:1; /*IE7*/  color:white; margin: 20px 10px;">
+						<a href="mailto:team@icontechnology.in" target="_blank" style="background-color:#875a7b; border: 1px solid #875a7b; padding: 5px 15px; color: white; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; transition: all 0.3s; border-bottom:3px solid #163040;">
+							<i class="fa fa-envelope"></i> &nbsp; Email
+						</a>
+					</li>
+					<li style="display:inline-block; *display:inline; /*IE7*/  *zoom:1; /*IE7*/  color:white; margin: 20px 10px;">
+						<a href="skype:icontechnology68?chat" target="_blank" style="background-color:#875a7b; border: 1px solid #875a7b; padding: 5px 15px; color: white; text-decoration: none; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; transition: all 0.3s; border-bottom:3px solid #163040;">
+							<i class="fa fa-skype"></i> &nbsp; Skype
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Help & Support end -->
+
+			<div style="border:0; margin:40px 0; height:4px; border-top:1px solid #875a7b; border-bottom:1px solid #875a7b; text-align:center">
+				<i class="fa fa-eercast fa-spin" style="color:#875a7b; border-radius:100%; background-color:#fff; text-align:center; display:inline-block; height:50px; line-height:50px!important; width:50px; font-size:30px; margin:-20px auto 0 -25px">
+				</i>
+			</div>
+
+			<!-- Our Services start -->
+			<div style="text-align: center;" class="d-block d-lg-none">
+				<h2 style="padding: 0 0 3px 0; font-family: 'Montserrat', sans-serif; margin: 20px 0 0 0; color: #875a7b; position: relative; font-size: 36px; font-weight: 700;">Our Services
+				</h2>
+			</div>
+
+			<div style="text-align: center;" class="d-none d-lg-block">
+				<span style="padding: 0; margin: 0; font-size: 58px; letter-spacing: 5px;  font-weight: 700; color: rgba(99, 99, 99, 0.1); font-family: 'Montserrat', sans-serif;">Our Services</span>
+				<h2 style="padding: 0 0 3px 0; font-family: 'Montserrat', sans-serif; margin: -67px 0 0 0; color: #875a7b; position: relative; font-size: 36px; font-weight: 700;">Our Services</h2>
+			</div>
+
+			<div class="title">
+				<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; text-align: center; margin: 15px 0;">Our other Odoo Services.
+				</p>
+			</div>
+
+			<div class="our-services" style="text-align: center; width: 100%;">
+				<div style="text-align:center" class="row">
+					<div class="col-6 col-md-3 mb-3" style="color:white;">
+						<div class="oe_screenshot p-0">
+							<span ><img src="odoo-customization.png" class="img-fluid" style="padding: 10px"></span>
+							<div class="d-block d-lg-none" style="background-color:#875a7b; border:1px solid #875a7b; padding:5px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:13px; text-transform:uppercase; border-bottom:3px solid #163040;">
+								Customization
+							</div>
+							<div class="d-none d-lg-block" style="background-color:#875a7b; border:1px solid #875a7b; padding:9px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; border-bottom:3px solid #163040;">
+								Customization
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3 mb-3" style="color:white;">
+						<div class="oe_screenshot p-0">
+							<span ><img src="odoo-integration.png" class="img-fluid" style="padding: 10px"></span>
+							<div class="d-block d-lg-none" style="background-color:#875a7b; border:1px solid #875a7b; padding:5px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:13px; text-transform:uppercase; border-bottom:3px solid #163040; ">
+								Integration
+							</div>
+							<div class="d-none d-lg-block" style="background-color:#875a7b; border:1px solid #875a7b; padding:9px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; border-bottom:3px solid #163040; ">
+								Integration
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3 mb-3" style="color:white;">
+						<div class="oe_screenshot p-0">
+							<span ><img src="odoo-implementation.png" class="img-fluid" style="padding: 10px"></span>
+							<div class="d-block d-lg-none" style="background-color:#875a7b; border:1px solid #875a7b; padding:5px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:13px; text-transform:uppercase; border-bottom:3px solid #163040; ">
+								Implementation
+							</div>
+							<div class="d-none d-lg-block" style="background-color:#875a7b; border:1px solid #875a7b; padding:9px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; border-bottom:3px solid #163040; ">
+								Implementation
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3 mb-3" style="color:white;">
+						<div class="oe_screenshot p-0">
+							<span><img src="support.png" class="img-fluid" style="padding: 10px"></span>
+							<div class="d-block d-lg-none" style="background-color:#875a7b; border:1px solid #875a7b; padding:5px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:13px; text-transform:uppercase; border-bottom:3px solid #163040;">
+								Support &amp; Maintenance
+							</div>
+							<div class="d-none d-lg-block" style="background-color:#875a7b; border:1px solid #875a7b; padding:9px 5px; color:white; text-decoration:none; font-family: 'Montserrat', sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; border-bottom:3px solid #163040;">
+								Support &amp; Maintenance
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="title">
+				<p style="color: #875a7b; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; text-align: center; margin: 15px 0;">Connect with us <a href="mailto:team@icontechnology.in" style="color: #875a7b;">team@icontechnology.in</a>
+				</p>
+			</div>
+			<!-- Our Services end -->
+
+		</div>
+	</section>

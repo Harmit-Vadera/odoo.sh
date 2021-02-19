@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<data noupdate="1">
+		<record id="auto_db_backup_scheduler" model="ir.cron">
+			<field name="interval_type">days</field>
+			<field name="name">Scheduler for Auto DB Backup To Folder</field>
+			<field name="numbercall">-1</field>
+			<field name="priority">5</field>
+			<field name="doall">False</field>
+			<field name="active">False</field>
+			<field name="interval_number">1</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="state">code</field>
+			<field name="code">model.schedule_auto_db_backup()</field>
+		</record>
+
+		<record id="auto_db_backup_scheduler_Gdrive" model="ir.cron">
+			<field name="interval_type">days</field>
+			<field name="name">Scheduler for Auto DB Backup To Google Drive
+			</field>
+			<field name="numbercall">-1</field>
+			<field name="priority">5</field>
+			<field name="doall">False</field>
+			<field name="active">False</field>
+			<field name="interval_number">1</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="state">code</field>
+			<field name="code">model.schedule_auto_db_backup_to_Gdrive()</field>
+		</record>
+
+		<record id="auto_db_backup_scheduler_dropbox" model="ir.cron">
+			<field name="interval_type">days</field>
+			<field name="name">Scheduler for Auto DB Backup To Dropbox</field>
+			<field name="numbercall">-1</field>
+			<field name="priority">5</field>
+			<field name="doall">False</field>
+			<field name="active">False</field>
+			<field name="interval_number">1</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="state">code</field>
+			<field name="code">model.schedule_auto_db_backup_to_dropbox()</field>
+		</record>
+
+		<record id="auto_db_backup_scheduler_ftp" model="ir.cron">
+			<field name="interval_type">days</field>
+			<field name="name">Scheduler for Auto DB Backup To FTP</field>
+			<field name="numbercall">-1</field>
+			<field name="priority">5</field>
+			<field name="doall">False</field>
+			<field name="active">False</field>
+			<field name="interval_number">1</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="state">code</field>
+			<field name="code">model.schedule_auto_db_backup_to_ftp()</field>
+		</record>
+		
+		<record id="auto_db_backup_scheduler_sftp" model="ir.cron">
+			<field name="interval_type">days</field>
+			<field name="name">Scheduler for Auto DB Backup To SFTP</field>
+			<field name="numbercall">-1</field>
+			<field name="priority">5</field>
+			<field name="doall">False</field>
+			<field name="active">False</field>
+			<field name="interval_number">1</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="state">code</field>
+			<field name="code">model.schedule_auto_db_backup_to_sftp()</field>
+		</record>
+
+		<record id="auto_db_backup_configuration_form" model="auto.database.backup">
+			<field name="name">Auto db backups</field>
+			<field name="autoremove">True</field>
+			<field name="days_to_keep">1</field>
+		</record>
+
+		<record id="rule_upload_backup_to_folder" model="database.backup">
+			<field name="backup_id" ref="auto_db_backup_configuration_form"></field>
+			<field name="backup_type">zip</field>
+			<field name="backup_destination">folder</field>
+			<field name="is_active">False</field>
+			<field name="next_exec_dt" eval="(DateTime.now()).strftime('%Y-%m-%d %H:%M:%S')"></field>
+		</record>
+
+		<record id="rule_upload_backup_to_drive" model="database.backup">
+			<field name="backup_id" ref="auto_db_backup_configuration_form"></field>
+			<field name="backup_type">dump</field>
+			<field name="backup_destination">g_drive</field>
+			<field name="is_active">False</field>
+			<field name="next_exec_dt" eval="(DateTime.now()).strftime('%Y-%m-%d %H:%M:%S')"></field>
+		</record>
+
+		<record id="rule_upload_backup_to_dropbox" model="database.backup">
+			<field name="backup_id" ref="auto_db_backup_configuration_form"></field>
+			<field name="backup_type">zip</field>
+			<field name="backup_destination">dropbox</field>
+			<field name="is_active">False</field>
+			<field name="next_exec_dt" eval="(DateTime.now()).strftime('%Y-%m-%d %H:%M:%S')"></field>
+		</record>
+
+		<record id="rule_upload_backup_to_ftp" model="database.backup">
+			<field name="backup_id" ref="auto_db_backup_configuration_form"></field>
+			<field name="backup_type">zip</field>
+			<field name="backup_destination">ftp</field>
+			<field name="is_active">False</field>
+			<field name="next_exec_dt" eval="(DateTime.now()).strftime('%Y-%m-%d %H:%M:%S')"></field>
+		</record>
+		
+		<record id="rule_upload_backup_to_sftp" model="database.backup">
+			<field name="backup_id" ref="auto_db_backup_configuration_form"></field>
+			<field name="backup_type">zip</field>
+			<field name="backup_destination">sftp</field>
+			<field name="is_active">False</field>
+			<field name="next_exec_dt" eval="(DateTime.now()).strftime('%Y-%m-%d %H:%M:%S')"></field>
+		</record>
+
+	</data>
+</odoo>
