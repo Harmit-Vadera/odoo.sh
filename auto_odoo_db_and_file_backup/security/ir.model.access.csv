@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+admin_access, db_backup admin access,model_database_backup,base.group_no_one,1,1,1,1
+admin_access_auto_databse_backup,admin_access_auto_databse_backup,model_auto_database_backup,base.group_no_one,1,1,1,1
+access_auto_database_backup_status,access_auto_database_backup_status,auto_odoo_db_and_file_backup.model_auto_database_backup_status,base.group_no_one,1,1,1,1

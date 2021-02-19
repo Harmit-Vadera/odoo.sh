@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	<record id="view_autobackup_config_form" model="ir.ui.view">
+		<field name="name">database.backup.form</field>
+		<field name="model">database.backup</field>
+		<field name="arch" type="xml">
+			<form create="0" string="Back-up Rules view">
+				<header>
+					<button name="trigger_direct" string="Backup" type="object"
+						class="oe_highlight" context="{'backup_destination' : backup_destination}" />
+				</header>
+				<sheet>
+					<group>
+						<field name="backup_type" />
+						<field name="backup_destination" />
+						<field name="backup" />
+						<field name="files_path"
+							attrs="{'invisible': [('backup','=','db_only')], 'required': [('backup','!=','db_only')]}" />
+						<label for="folder"
+							attrs="{'invisible':[('backup_destination', '!=', 'folder')]}"></label>
+						<div class="address_format">
+							<field name="folder" style="width: 65%;"
+								attrs="{'invisible':[('backup_destination', '!=', 'folder')],
+														'required':[('backup_destination', '=', 'folder')]}" />
+							&amp;nbsp;
+							<field name="foldername" style="width:30%"
+								attrs="{'invisible':[('backup_destination', '!=', 'folder')],
+														'required':[('backup_destination', '=', 'folder')]}"></field>
+						</div>
+						<span attrs="{'invisible':[('backup_destination', '!=', 'g_drive')]}">Get an authorization code and set it in the
+							field
+							below.
+						</span>
+						<field name="google_drive_uri"
+							attrs="{'invisible':[('backup_destination', '!=', 'g_drive')]}"
+							class="fa fa-arrow-right mt-1" widget="url" text="Get Authorization Code"
+							nolabel="1" />
+						<field name="google_drive_authorization_code" string="Authorization Code"
+							attrs="{'required':[('backup_destination', '=', 'g_drive')], 'invisible':[('backup_destination', '!=', 'g_drive')]}" />
+						<field name="google_drive_refresh_token" invisible="1" />
+
+						<field name="d_app_key"
+							attrs="{'required':[('backup_destination', '=', 'dropbox')], 'invisible':[('backup_destination', '!=', 'dropbox')]}" />
+						<field name="d_app_secret" password="True"
+							attrs="{'required':[('backup_destination', '=', 'dropbox')], 'invisible':[('backup_destination', '!=', 'dropbox')]}" />
+						<span attrs="{'invisible':[('backup_destination', '!=', 'dropbox')]}">Get an authorization code and set it in the
+							field
+							below.
+						</span>
+						<field name="dropbox_uri"
+							attrs="{'invisible':[('backup_destination', '!=', 'dropbox')]}"
+							class="fa fa-arrow-right mt-1" widget="url" text="Get Authorization Code"
+							nolabel="1" />
+						<field name="dropbox_authorization_code" string="Authorization Code"
+							attrs="{'required':[('backup_destination', '=', 'dropbox')], 'invisible':[('backup_destination', '!=', 'dropbox')]}"></field>
+						<field name="dropbox_token" invisible="1"></field>
+
+						<field name="ftp_address"
+							attrs="{'required':[('backup_destination', '=', 'ftp')], 'invisible':[('backup_destination', '!=', 'ftp')]}" />
+						<field name="ftp_port"
+							attrs="{'required':[('backup_destination', '=', 'ftp')], 'invisible':[('backup_destination', '!=', 'ftp')]}" />
+						<field name="ftp_usrnm"
+							attrs="{'required':[('backup_destination', '=', 'ftp')], 'invisible':[('backup_destination', '!=', 'ftp')]}" />
+						<field name="ftp_pwd" password="True"
+							attrs="{'required':[('backup_destination', '=', 'ftp')], 'invisible':[('backup_destination', '!=', 'ftp')]}" />
+						<field name="ftp_path"
+							attrs="{'required':[('backup_destination', '=', 'ftp')], 'invisible':[('backup_destination', '!=', 'ftp')]}" />
+						<button name="test_ftp_connection" type="object"
+							string="Test FTP Connection" attrs="{'invisible':[('backup_destination', '!=', 'ftp')]}" />
+
+						<field name="sftp_host"
+							attrs="{'required':[('backup_destination', '=', 'sftp')], 'invisible':[('backup_destination', '!=', 'sftp')]}"></field>
+						<field name="sftp_user"
+							attrs="{'required':[('backup_destination', '=', 'sftp')], 'invisible':[('backup_destination', '!=', 'sftp')]}"></field>
+
+						<label for="sftp_keyfilepath"
+							attrs="{'invisible':[('backup_destination', '!=', 'sftp')]}"></label>
+						<div class="address_format">
+							<field name="sftp_keyfilepath" style="width: 70%;"
+								attrs="{'required':[('backup_destination', '=', 'sftp')], 'invisible':[('backup_destination', '!=', 'sftp')]}"></field>
+							&amp;nbsp;
+							<field name="upload_file" style="width: 25%;" filename="file_name"
+								attrs="{'invisible':[('backup_destination', '!=', 'sftp')]}" />
+							<field name="file_name" invisible="1" />
+						</div>
+						<field name="sftp_file_path"
+							attrs="{'required':[('backup_destination', '=', 'sftp')], 'invisible':[('backup_destination', '!=', 'sftp')]}"></field>
+						<button name="test_sftp_connection" type="object"
+							string="Test SFTP Connection" attrs="{'invisible':[('backup_destination', '!=', 'sftp')]}" />
+
+						<field name="is_active"></field>
+						<field name="interval_number"></field>
+						<field name="interval_type"></field>
+						<field name="next_exec_dt" />
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="view_auto_backup_config_form" model="ir.ui.view">
+		<field name="name">auto.database.backup.form</field>
+		<field name="model">auto.database.backup</field>
+		<field name="arch" type="xml">
+			<form create="0" delete="0" string="Back-up view">
+				<sheet>
+					<div class="oe_title">
+						<label for="name" class="oe_edit_only" />
+						<h1>
+							<field name="name" class="oe_inline" />
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name="bkup_email"></field>
+							<field name="autoremove"></field>
+						</group>
+						<group>
+							<field name="bkup_fail_email"></field>
+							<field name="days_to_keep"
+								attrs="{'required':[('autoremove', '=', True)], 'invisible':[('autoremove', '=', False)]}"></field>
+						</group>
+					</group>
+					<notebook>
+						<page string="Automatic Backup Rules">
+							<field name="bkpu_rules"
+								context="{'form_view_ref': 'auto_odoo_db_and_file_backup.view_autobackup_config_form'}">
+								<tree create="0" delete="0">
+									<field name="is_active"></field>
+									<field name="backup_type" />
+									<field name="backup_destination" />
+									<field name="next_exec_dt" />
+									<field name="backup_id" invisible="1"></field>
+									<button name="trigger_direct" string="Backup" type="object"
+										class="oe_link" context="{'backup_destination' : backup_destination, 'id' : id}" />
+								</tree>
+							</field>
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="view_auto_backup_config_tree" model="ir.ui.view">
+		<field name="name">auto.database.backup.tree</field>
+		<field name="model">auto.database.backup</field>
+		<field name="arch" type="xml">
+			<tree create="0" delete="0" string="Backups">
+				<field name='name' />
+			</tree>
+		</field>
+	</record>
+
+	<record id="action_autobackup" model="ir.actions.act_window">
+		<field name="name">Configure Auto DB Backups</field>
+		<field name="res_model">auto.database.backup</field>
+		<field name="view_mode">tree,form</field>
+		<field name="view_id" ref="view_auto_backup_config_tree" />
+	</record>
+
+	<menuitem id="auto_backup_menu" name="Auto DB Backups" parent="base.menu_custom" />
+	<menuitem parent="auto_backup_menu" action="action_autobackup"
+		id="backup_conf_menu" />
+		
+	<record id="view_auto_backup_status_tree" model="ir.ui.view">
+		<field name="name">auto.database.backup.status.tree</field>
+		<field name="model">auto.database.backup.status</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree create="0" string="Backups Status">
+				<field name='date' />
+				<field name='name' string="status"/>
+			</tree>
+		</field>
+	</record>
+	
+	<record id="action_autobackup_status" model="ir.actions.act_window">
+		<field name="name">Auto DB Backups Status</field>
+		<field name="res_model">auto.database.backup.status</field>
+		<field name="view_mode">tree</field>
+		<field name="view_id" ref="view_auto_backup_status_tree" />
+	</record>
+	
+	<menuitem parent="auto_backup_menu" action="action_autobackup_status"
+		id="backup_status_menu" />
+</odoo>
