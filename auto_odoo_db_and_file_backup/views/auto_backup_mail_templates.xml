@@ -1,0 +1,34 @@
+<odoo>
+	<data>
+		<record id="email_local_upload" model="mail.template">
+			<field name="name">Local</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="lang">${object.env.user.partner_id.lang}</field>
+			<field name="auto_delete" eval="True" />
+		</record>
+		<record id="email_google_drive_upload" model="mail.template">
+			<field name="name">Google Drive</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="lang">${object.env.user.partner_id.lang}</field>
+			<field name="auto_delete" eval="True" />
+		</record>
+		<record id="email_dropbox_upload" model="mail.template">
+			<field name="name">Dropbox</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="lang">${object.env.user.partner_id.lang}</field>
+			<field name="auto_delete" eval="True" />
+		</record>
+		<record id="email_ftp_upload" model="mail.template">
+			<field name="name">FTP</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="lang">${object.env.user.partner_id.lang}</field>
+			<field name="auto_delete" eval="True" />
+		</record>
+		<record id="email_sftp_upload" model="mail.template">
+			<field name="name">SFTP</field>
+			<field name="model_id" ref="model_database_backup" />
+			<field name="lang">${object.env.user.partner_id.lang}</field>
+			<field name="auto_delete" eval="True" />
+		</record>
+	</data>
+</odoo>
