@@ -24,30 +24,30 @@ import requests
 from odoo.addons.google_account.models.google_service import GOOGLE_TOKEN_ENDPOINT, TIMEOUT
 import sys, subprocess
 py_v = "python%s.%s" % (sys.version_info.major,sys.version_info.minor)
-try:
-    import dropbox
-except ImportError:
-    print('\n There was no such module named -dropbox- installed')
-    print('xxxxxxxxxxxxxxxx installing dropbox xxxxxxxxxxxxxx')
-    subprocess.check_call([py_v, "-m", "pip", "install","--user", "dropbox"])
-    import dropbox
-from dropbox.files import WriteMode
-from dropbox.exceptions import ApiError, AuthError    
-try:
-    import ftplib
-except ImportError:
-    print('\n There was no such module named -ftplib- installed')
-    print('xxxxxxxxxxxxxxxx installing ftplib xxxxxxxxxxxxxx')
-    subprocess.check_call([py_v, "-m", "pip", "install","--user", "ftplib"])
-    import ftplib
-from dateutil.relativedelta import relativedelta
-try:
-    import pysftp
-except ImportError:
-    print('\n There was no such module named -pysftp- installed')
-    print('xxxxxxxxxxxxxxxx installing pysftp xxxxxxxxxxxxxx')
-    subprocess.check_call([py_v, "-m", "pip", "install","--user", "pysftp"])
-    import pysftp
+# try:
+#     import dropbox
+# except ImportError:
+#     print('\n There was no such module named -dropbox- installed')
+#     print('xxxxxxxxxxxxxxxx installing dropbox xxxxxxxxxxxxxx')
+#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "dropbox"])
+#     import dropbox
+# from dropbox.files import WriteMode
+# from dropbox.exceptions import ApiError, AuthError    
+# try:
+#     import ftplib
+# except ImportError:
+#     print('\n There was no such module named -ftplib- installed')
+#     print('xxxxxxxxxxxxxxxx installing ftplib xxxxxxxxxxxxxx')
+#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "ftplib"])
+#     import ftplib
+# from dateutil.relativedelta import relativedelta
+# try:
+#     import pysftp
+# except ImportError:
+#     print('\n There was no such module named -pysftp- installed')
+#     print('xxxxxxxxxxxxxxxx installing pysftp xxxxxxxxxxxxxx')
+#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "pysftp"])
+#     import pysftp
 from paramiko.ssh_exception import SSHException
 import base64
 import io
