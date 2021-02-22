@@ -27,12 +27,18 @@ class AutoBackupScheduler(models.Model):
                 server_url = params.get_param('web.base.url')
                 if backup_dir and backup_dir[-1] != '/':
                     backup_dir += '/'
+                backup_dir1 = "/home/odoo/tmp/"
                 command = 'curl -X POST -F "master_pwd=%s" -F "name=%s" -F "backup_format=%s" ' \
                           '-o %s/%s_%s_db.%s %s/web/database/backup' % (master_pwd, db_name, backup_format,
                                                                         backup_dir, db_name, time_now,
                                                                         backup_format, server_url)
+                command1 = 'curl -X POST -F "master_pwd=%s" -F "name=%s" -F "backup_format=%s" ' \
+                          '-o %s/%s_%s_db.%s %s/web/database/backup' % (master_pwd, db_name, backup_format,
+                                                                        backup_dir1, db_name, time_now,
+                                                                        backup_format, server_url)
                 unix_code = os.system(command)
-                _logger.info(":::: Autobackup Cron Feedback Unix Code (Backup): %s ::::" % unix_code)
+                unix_code1 = os.system(command1)
+                _logger.info(":::: Autobackup Cron Feedback Unix Code (Backup): %s %s::::" % unix_code,unix_code1)
             except Exception as e:
                 _logger.info("::::--------- Error %s -----------::::" % str(e))
         _logger.info(":::: Autobackup Cron Finished ::::")
