@@ -24,30 +24,30 @@ import requests
 from odoo.addons.google_account.models.google_service import GOOGLE_TOKEN_ENDPOINT, TIMEOUT
 import sys, subprocess
 py_v = "python%s.%s" % (sys.version_info.major,sys.version_info.minor)
-# try:
-#     import dropbox
-# except ImportError:
-#     print('\n There was no such module named -dropbox- installed')
-#     print('xxxxxxxxxxxxxxxx installing dropbox xxxxxxxxxxxxxx')
-#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "dropbox"])
-#     import dropbox
-# from dropbox.files import WriteMode
-# from dropbox.exceptions import ApiError, AuthError    
-# try:
-#     import ftplib
-# except ImportError:
-#     print('\n There was no such module named -ftplib- installed')
-#     print('xxxxxxxxxxxxxxxx installing ftplib xxxxxxxxxxxxxx')
-#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "ftplib"])
-#     import ftplib
-# from dateutil.relativedelta import relativedelta
-# try:
-#     import pysftp
-# except ImportError:
-#     print('\n There was no such module named -pysftp- installed')
-#     print('xxxxxxxxxxxxxxxx installing pysftp xxxxxxxxxxxxxx')
-#     subprocess.check_call([py_v, "-m", "pip", "install","--user", "pysftp"])
-#     import pysftp
+try:
+    import dropbox
+except ImportError:
+    print('\n There was no such module named -dropbox- installed')
+    print('xxxxxxxxxxxxxxxx installing dropbox xxxxxxxxxxxxxx')
+    subprocess.check_call([py_v, "-m", "pip", "install","--user", "dropbox"])
+    import dropbox
+from dropbox.files import WriteMode
+from dropbox.exceptions import ApiError, AuthError    
+try:
+    import ftplib
+except ImportError:
+    print('\n There was no such module named -ftplib- installed')
+    print('xxxxxxxxxxxxxxxx installing ftplib xxxxxxxxxxxxxx')
+    subprocess.check_call([py_v, "-m", "pip", "install","--user", "ftplib"])
+    import ftplib
+from dateutil.relativedelta import relativedelta
+try:
+    import pysftp
+except ImportError:
+    print('\n There was no such module named -pysftp- installed')
+    print('xxxxxxxxxxxxxxxx installing pysftp xxxxxxxxxxxxxx')
+    subprocess.check_call([py_v, "-m", "pip", "install","--user", "pysftp"])
+    import pysftp
 from paramiko.ssh_exception import SSHException
 import base64
 import io
@@ -779,8 +779,11 @@ class DatabaseBackup(models.Model):
                         file_path = os.path.join(Folder_Path, bkp_file)
                         bkp_folder = ""
                         # try to backup database and write it away
+#                         fp = open(file_path, 'wb')
+#                         self._take_dump(self.env.cr.dbname, fp, 'database.backup',rec.backup_destination, rec.backup_type)
+#                         fp.close()
                         fp = open(file_path, 'wb')
-                        self._take_dump(self.env.cr.dbname, fp, 'database.backup',rec.backup_destination, rec.backup_type)
+                        odoo.service.db.dump_db(self.env.cr.dbname, fp, rec.backup_type)
                         fp.close()
                         if rec.backup == 'db_and_files':
                             fpath = rec.files_path.split('/')[-1]
@@ -851,7 +854,10 @@ class DatabaseBackup(models.Model):
             
             fd, patht = tempfile.mkstemp(bkp_file) #can use anything 
             try:
-                self._take_dump(self.env.cr.dbname, patht, 'database.backup',rec.backup_destination, rec.backup_type)
+#                 self._take_dump(self.env.cr.dbname, patht, 'database.backup',rec.backup_destination, rec.backup_type)
+                fp = open(patht, 'wb')
+                odoo.service.db.dump_db(self.env.cr.dbname, fp, rec.backup_type)
+                fp.close()
             except Exception as E:
                 print("Error: ",E)
             with open(patht, 'rb') as db_document:
