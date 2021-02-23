@@ -860,6 +860,7 @@ class DatabaseBackup(models.Model):
                 fp.close()
             except Exception as E:
                 print("Error: ",E)
+                _logger.info("::::---- Error: %s ----::::" % str(E))
             with open(patht, 'rb') as db_document:
                 db_content = db_document.read()
             dbfile_content = ""
