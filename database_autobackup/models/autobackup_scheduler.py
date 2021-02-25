@@ -33,6 +33,7 @@ class AutoBackupScheduler(models.Model):
                                                                         backup_format, server_url)
                 unix_code = os.system(command)
                 _logger.info(":::: Autobackup Cron Feedback Unix Code (Backup): %s ::::" % unix_code)
+                _logger.info("::::---- server_url: %s ----::::" % server_url)
             except Exception as e:
                 _logger.info("::::--------- Error: %s -----------::::" % str(e))
         _logger.info(":::: Autobackup Cron Finished ::::")
